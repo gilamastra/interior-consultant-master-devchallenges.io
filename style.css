@@ -1,0 +1,278 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat';
+}
+html,body{
+    background-color: #181719;
+    height:100%
+    ;
+    color:white;
+}
+.container{
+    max-width:1800px;
+    margin:0 auto;
+    padding:0 2%;
+}
+
+.mobile{
+    display:none;
+    width:100vw;
+    height:100vh;
+    background-color: #181719;
+}
+.mobileUl{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:200px;
+    align-items: center;
+
+}
+.mobile ul li {
+    margin:auto;
+    color:white;
+
+    justify-self: center;
+    align-self: center;
+    text-decoration:none ;
+    list-style:none;
+    font-size:18px;
+    margin: 20px 0;
+    }
+.mobile ul li a {
+    text-decoration:none ;
+
+    margin:auto;
+    color:white;
+}
+.mobile  ul li:first-of-type{
+    border-bottom:2px solid white;
+    padding-bottom:5px;
+    font-weight:700;
+
+}
+.mobilelogo{
+    margin-top:40px;
+    float: left;
+    display:none;
+    cursor:pointer;
+}
+.icon{
+    float:right;
+    position: relative;
+    bottom:40px;
+
+    width:40px;
+    cursor:pointer;
+    height:40px;
+    display:none;
+}
+header{
+margin-top:45px;
+}
+.desktop{
+    display:flex;
+    justify-content:space-between;
+}
+.desktop ul{
+    list-style:none;
+}
+.desktop ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.desktop .logo ,.logo{
+    font-size:14px;
+    border:1px solid white;
+    padding:10px 15px;
+    font-weight:700;
+
+}
+.desktop ul li{
+    display:inline-block;
+    font-size:18px;
+    margin:0 40px;
+}
+.desktop ul li:first-of-type{
+    border-bottom:2px solid white;
+    padding-bottom:5px;
+    font-weight:700;
+
+}
+
+.content-flex{
+    display:flex;
+    margin-top:130px;
+}
+
+.content-1{
+    width:45%;
+    margin-top:100px;
+}
+.content-1 h2{
+    margin:50px 0;
+    font-family: Lora;
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+color: #FFFFFF;
+}
+.content-1 p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    max-width:410px;
+    color: #FFFFFF;
+    margin-bottom:40px;
+    
+}
+.content-1 a{
+text-decoration: none;
+font-family: Montserrat;
+color:white;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+}
+.content-2{
+    width:50%;
+}
+.content-2 .img-large{
+    background-image:url('photo1.png');
+    max-height:586.53px;
+    height:110%;
+    background-size:100% 100%;
+    
+    max-width:820px;
+    position: relative;
+}
+.content-2 .square{
+    position:absolute;
+    bottom:-100px;
+    right:0;
+    margin:0px 40px 0 0;
+    max-width: 410px;
+    width:60%;
+    background-color:#181719;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 189px;
+}
+
+.photo{
+    background-image: url('photo2.png');
+    width:60px;
+    height:60px;
+    border-radius:100%;
+    background-size:100% 100%;
+}
+.square-content{
+    display:flex;
+    margin:20px;
+}
+.square-content-top{
+    margin-left:15px;
+    margin-top:15px;
+}
+.square-content-top h2{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+}
+.square-content-top p{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+color: #828282;
+}
+.designed{
+    font-family: Lora;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 31px;
+margin-left: 15px;
+color: #FFFFFF;
+}
+
+
+
+
+footer{
+width:100%;
+bottom:0;
+display:flex;
+
+}
+footer p{
+    margin:auto;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+
+margin-top:200px;
+font-size: 14px;
+line-height: 17px;
+
+/* identical to box height */
+
+text-align: center;
+
+color: #A9A9A9;
+
+}
+
+@media screen and (max-width:1024px){
+    .desktop{
+        display:none;
+    }
+    .icon,.mobilelogo{
+        display:block;
+    }
+    .mobilelogo{
+        display:block;
+    }
+    .content-flex{
+        flex-direction:column;
+        margin-top:0px;
+    }
+
+    .content-1{
+        width:auto;
+        display:inline-block;
+        margin:auto;
+        margin-top:100px;
+  
+    }
+
+    .content-2{
+        width:auto;
+        display:inline-block;
+        margin:auto;
+        margin-top:100px;
+    }
+
+    .content-2 .img-large{
+        background-image:url('photo1.png');
+        max-height:586.53px;
+        height:100%;
+        min-height:400px;
+        background-size:100% 100%;
+        width:100%;
+        min-width:400px;
+        max-width:820px;
+        position: relative;
+    }
+    
+}

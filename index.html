@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <title>Document</title>
+</head><link rel="stylesheet" href="">
+<body>
+  <div class="container">
+
+    <header>
+      <nav class="desktop">
+        <div  id="logo" class="logo">THIS INTERIOR</div>
+        <ul class="desktopUl">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Collection</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul><!--desktop.ul-->
+      </nav><!--desktop-->
+
+      <div class="logo mobilelogo">THIS INTERIOR</div>
+        <div style="clear: both;"></div>
+     <img class="icon" src="reorder-white-18dp.svg" alt="">
+     <div style="clear: both;"></div>
+
+    
+      <nav class="mobile">
+
+        <ul id="mobileUl" class="mobileUl">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Collection</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+
+        </ul><!--mobile.ul-->
+      </nav><!--container-->
+    </header>
+  </div> <!--container-->
+
+  <section>
+    <div class="container">
+      <div class="content-flex">
+        <div class="content-1">
+          <h2>Modern interior</h2>
+          <p>A full-Service residential & commercial interior design and staging company offering
+             professional organizing & eco-services.</p>
+          <a href="#">Read more</a>
+          <i class="material-icons" style="position: relative;top:6px">arrow_right_alt</i>
+        </div><!--content-1-->
+ 
+        <div class="content-2">
+          <div class="img-large">
+            <div class="square">
+              <div class="square-content">
+                  <div class="photo"></div><!--photo-->
+                  <div class="square-content-top">
+                    <h2>Aliza Webber</h2>
+                    <p>Interior designer</p>
+                  </div><!--square-content-top-->
+             </div><!--square-content1-->
+
+
+                 <p class="designed">Designed in 2020 by<br>Aliza Webber</p>
+
+
+
+            </div><!--square-->
+          </div><!--img-large-->
+        </div><!--content-2-->
+      </div><!--content-flex-->
+    </div>
+  </section>
+
+  <footer>
+
+    <p>created by gilamastra - devChallenges.io</p>
+
+  </footer>
+
+
+
+
+
+  <script>
+    $(".icon").click(function(){
+
+      $(".mobile").slideToggle( "slow")
+  })
+  </script>
+
+</body>
+
+</html>
